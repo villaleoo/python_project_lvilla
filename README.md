@@ -13,3 +13,5 @@ La app inicio cuenta con 3 vistas en el archivo views.py que cada una lleva a un
 
 Para crear los formularios que renderizan los templates de registro e inicio de sesion se utilizaron clases contenidas en el archivo forms.py que luego se importaron en el archivo de vistas views.py para su uso.
 Para crear datos en la BBDD se crearon clases en el archivo models.py . La clase article servira para crear el contenido (que van a ser tipo textos/noticias) de la web.
+
+el static.html es el html padre 
