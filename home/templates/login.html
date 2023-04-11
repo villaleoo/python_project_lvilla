@@ -1,0 +1,22 @@
+{% extends 'static.html' %}
+
+{% block title_head %}
+    <title>Iniciar sesion</title>
+{% endblock title_head %}
+
+{% block content %}
+<form class="px-5 mt-5" action={% url 'iniciar sesion' %}>
+    {{form}}
+    <button type="submit" class="btn btn-primary">Iniciar sesion</button> 
+</form> 
+{% if user %}
+
+{% for user in user %}
+    <h3>Bienvenido {{user.email}}</h3>
+{% endfor %}
+
+{% elif user != None %}
+    <h3>No existe usuario asociado al mail</h3>
+    
+{% endif %}
+{% endblock content %}

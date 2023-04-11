@@ -1,0 +1,13 @@
+{% extends 'static.html' %}
+
+{% block title_head %}
+    <title>Registrarse</title>
+{% endblock title_head %}
+
+{% block content %}
+<form class="px-5 mt-5" action={% url 'registro' %} method='POST'>
+    {% csrf_token %}
+    {{form}}
+    <button type="submit" class="btn btn-primary">Registrarse</button> 
+  </form> 
+{% endblock content %}

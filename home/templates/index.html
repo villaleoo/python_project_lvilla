@@ -1,0 +1,21 @@
+{% extends 'static.html' %}
+
+{% block title_head %}
+    <title>Inicio</title>
+{% endblock title_head %}
+
+{% block content %}
+
+  <a class="d-flex justify-content-center bg-dark" href={% url 'registro' %}>
+    <h2>Registrarse</h2>
+  </a>
+  <a class="d-flex justify-content-center bg-dark" href={% url 'iniciar sesion' %}>
+    <h2>Iniciar sesion</h2>
+  </a>
+  <div> 
+    <h1 style='height:60vh'>CONTENIDO</h1>
+  </div>
+
+
+{% endblock content %}
+
